@@ -87,6 +87,14 @@ footer
     bottom: 0
     transform: rotate(180deg)
 
+span
+    visibility: hidden
+    position: absolute
+    bottom: 0
+    width: 100vw
+    height: 6.5vh
+    background-color: #fa6501
+
 @media screen and (max-width: 1030px)
     article
         width: 95%
@@ -117,5 +125,17 @@ footer
                 grid-area: 3 / 2 / 4 / 3
 
 @media screen and (max-width: 500px)
+    article
+        width: 95%
+
+        a
+            max-width: 100%
+
     header, footer
-        background-size: 100vw auto
+        background-size: 100vw 55%
+
+    footer
+        bottom: 6.5vh
+
+    span
+        visibility: visible

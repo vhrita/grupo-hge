@@ -100,6 +100,15 @@ footer {
   transform: rotate(180deg);
 }
 
+span {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 6.5vh;
+  background-color: #fa6501;
+}
+
 @media screen and (max-width: 1030px) {
   article {
     width: 95%;
@@ -133,7 +142,19 @@ footer {
   }
 }
 @media screen and (max-width: 500px) {
+  article {
+    width: 95%;
+  }
+  article a {
+    max-width: 100%;
+  }
   header, footer {
-    background-size: 100vw auto;
+    background-size: 100vw 55%;
+  }
+  footer {
+    bottom: 6.5vh;
+  }
+  span {
+    visibility: visible;
   }
 }/*# sourceMappingURL=styles.css.map */
